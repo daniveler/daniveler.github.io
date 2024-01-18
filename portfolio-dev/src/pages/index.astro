@@ -1,10 +1,11 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import SectionContainer from '../components/SectionContainer.astro'
 import LinkedInIcon from '../components/icons/LinkedIn.astro'
 import GitHubIcon from '../components/icons/Github.astro'
 import Social from '../components/Social.astro'
 import MailIcon from '../components/icons/Mail.astro'
+import Experience from '../components/Experience.astro';
 ---
 
 <Layout 
@@ -13,32 +14,35 @@ import MailIcon from '../components/icons/Mail.astro'
 	
 >
 	<main>
-		<section class="w-full mx-auto lg:w-[740px] py-44">
+		<SectionContainer class="py-44 pb-16">
 			<h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-4">
 				Hey, I'm Daniel Velerdas Sedano
 			</h1>
 			<h2 class="text-2xl text-wrap">
 				<span class=" text-purple-200/90">
-					API Engineer and Full-Stack Developer
+					API Engineer, Full-Stack and Mobile Developer
 				</span>
 			</h2>
 
 			<nav class="flex gap-x-4 mt-8">
 				<Social href="https://linkedin.com/in/daniel-velerdas-sedano">
-					<LinkedInIcon class="w-6 h-6" />
+					<LinkedInIcon class="size-6" />
 					LinkedIn
 				</Social>
 				<Social href="https://github.com/daniveler">
-					<GitHubIcon  class="w-6 h-6" />
+					<GitHubIcon  class="size-6" />
 					Github
 				</Social>
 				<Social href="https://github.com/daniveler">
-					<MailIcon  class="w-6 h-6" />
+					<MailIcon  class="size-6" />
 					daniel01velerdas@gmail.com
 				</Social>
 			</nav>
-					
-		</section>
+		</SectionContainer>
+
+		<SectionContainer>
+			<Experience />
+		</SectionContainer>
 		
 	</main>
 </Layout>
