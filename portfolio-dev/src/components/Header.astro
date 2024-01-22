@@ -1,15 +1,30 @@
-<header class="flex justify-center items-center py-5 xl:w-[1120px] mx-auto">
+---
+import DownloadIcon from '../components/icons/Download.astro'
+---
+
+<header class="flex flex-row pt-4 
+  md:pt-5
+  mx-auto">
+
   <img 
-    class="rounded-full size-12 mr-12" 
+    class="flex mx-8 rounded-full size-16
+    md:size-12 md:relative md:mr-16" 
     src="https://media.licdn.com/dms/image/D4D03AQES7Moas9DG2A/profile-displayphoto-shrink_400_400/0/1686075196284?e=2147483647&v=beta&t=g16OQTycgzovcznyWA6IvyJrvEso3K-9JAINSxCDurk" 
     alt="Daniel photo" 
   />
 
-  <nav class="flex flex-row gap-x-10 opacity-80">
-    <a href="#top">Home</a>
-    <a href="#contact">Contact</a>
-    <a href="#experience">Experience</a>
-    <a href="#projects">Projects</a>
-    <a href="#about">About</a>
+  <nav class="flex flex-wrap justify-center items-center 
+    gap-y-2 opacity-80
+    md:flex md:flex-row md:text-base md:gap-y-5 md:gap-x-10">
+    <a class="w-1/2 text-center md:w-max" href="#top">Home</a>
+    <a class="w-1/2 text-center md:w-max" href="#experience">Experience</a>
+    <a class="w-1/2 text-center md:w-max" href="#projects">Projects</a>
+    <a class="w-1/2 text-center md:w-max" href="#about">About</a>
+    <a class="w-1/2 text-center md:w-max" href="#contact">Contact</a>
+    <button 
+      class=" bg-purple-500 hover:bg-purple-400 text-white-800 font-bold py-2 px-4 rounded inline-flex items-center">
+      <DownloadIcon class="mr-2"/>
+      Download CV
+    </button>
   </nav>
 </header>
