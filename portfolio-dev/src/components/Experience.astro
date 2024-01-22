@@ -6,17 +6,17 @@ const EXPERIENCE = [
   {
     date: 'September 2022 - Present',
     title: 'API Engineer in uXcale',
-    description: 'Culpa exercitation cillum laborum velit. Non eu excepteur quis irure culpa elit. Ipsum in veniam officia veniam tempor eiusmod.',
+    description: '- Development of an introductory training program for APIs.\n- Design and specification of internal APIs for employee and activity management.\n- Documentation on numerous API concepts and various technologies, such as OpenAPI, Apigee, Mulesoft, gRPC, AsyncAPI, and GraphQL, among others.\n- Implementation of APIs using different environments such as SpringBoot, NodeJS or GraphQL.\n- Conducting tests and testing with Junit 5 and Mockito.\n- Utilization of API clients such as Postman, Advanced Rest Client, or Insomnia.',
   }, 
   {
-    date: 'September 2022',
-    title: 'API Engineer in uXcale',
-    description: 'Culpa exercitation cillum laborum velit. Non eu excepteur quis irure culpa elit. Ipsum in veniam officia veniam tempor eiusmod.',
+    date: 'January 2022 - Present',
+    title: 'API OB Integration Engineer in Telefónica',
+    description: '- Project integration between Telefónica Kernel Global and Vivo Brazil team.\n- Involvement in the analysis and design processes of 4P APIs.\n- Significant contributions to different phases of the API lifecycle.\n- Formal documentation of all processes undertaken, as well as test case generation.',
   },
   {
-    date: 'September 2022',
-    title: 'API Engineer in uXcale',
-    description: 'Culpa exercitation cillum laborum velit. Non eu excepteur quis irure culpa elit. Ipsum in veniam officia veniam tempor eiusmod.',
+    date: 'February 2022 - May 2022',
+    title: 'Mobile Android and iOS Developer in Pixel Innova',
+    description: 'Development of several applications, both on Android and iOS, highlighting the implementation of features such as reading and interpreting QR codes, as well as handling data between the applications and a WebService.',
   },
 ]
 ---
@@ -28,7 +28,7 @@ const EXPERIENCE = [
 <ol class="relative border-s border-gray-200 ml-4">    
   {
     EXPERIENCE.map(experience =>(
-      <li class="mb-10 ms-4">
+      <li class="mb-10 ms-4 whitespace-pre-line">
         <ExperienceItem {...experience} />
       </li>
     ))
