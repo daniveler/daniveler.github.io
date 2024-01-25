@@ -2,6 +2,10 @@
 import CodeIcon from '../components/icons/Code.astro'
 import JavascriptIcon from '../components/icons/Javascript.astro'
 import ReactIcon from '../components/icons/Reactjs.astro'
+import JavaIcon from '../components/icons/Java.astro'
+import SpringbootIcon from '../components/icons/Springboot.astro'
+import AndroidIcon from '../components/icons/Android.astro'
+import KotlinIcon from '../components/icons/Kotlin.astro'
 
 const TAGS = {
   JAVASCRIPT: {
@@ -13,36 +17,63 @@ const TAGS = {
     name: 'ReactJS',
     class: 'bg-blue-500/70',
     icon: (ReactIcon)
-  }
+  },
+  JAVA: {
+    name: 'Java',
+    class: 'bg-orange-500/70',
+    icon: (JavaIcon)
+  },
+  SPRINGBOOT: {
+    name: 'Springboot',
+    class: 'bg-green-500/70',
+    icon: (SpringbootIcon)
+  },
+  ANDROID: {
+    name: 'Android',
+    class: 'bg-green-700/70',
+    icon: (AndroidIcon)
+  },
+  KOTLIN: {
+    name: 'Kotlin',
+    class: 'bg-purple-600/70',
+    icon: (KotlinIcon)
+  },
 }
 
 
 const PROJECTS = [
   {
-    title: 'React To-Do App',
+    title: 'To-Do Web Application',
     description: 'The idea of this project was making a simple web application using React JS to get familiar with this framework. \nThis app consists in a list of To-do tasks, with a title and status. All tasks created will be displayed at the main page, from where you can create new tasks, update and delete existing ones.',
     link: 'https://github.com/daniveler/react-todo-app',
     image: 'https://github.com/daniveler/react-todo-app/raw/main/images/todo-app.png',
     tags: [TAGS.REACTJS, TAGS.JAVASCRIPT]
   },
   {
-    title: 'React To-Do App',
-    description: 'The idea of this project was making a simple web application using React JS to get familiar with this framework. \nThis app consists in a list of To-do tasks, with a title and status. All tasks created will be displayed at the main page, from where you can create new tasks, update and delete existing ones.',
-    link: 'https://github.com/daniveler/react-todo-app',
-    image: 'https://github.com/daniveler/react-todo-app/raw/main/images/todo-app.png',
-    tags: [TAGS.REACTJS, TAGS.JAVASCRIPT]
+    title: 'Axpe Employees API',
+    description: 'Final exercise from a training period on apification. Rest API service for controlling employees of a company, including its OpenAPI 3.0 specification and implementation in Spring Boot.',
+    link: 'https://github.com/daniveler/api-empleados-axpe',
+    image: 'https://github.com/daniveler/api-empleados-axpe/raw/main/images/axpe-employees-api.png',
+    tags: [TAGS.JAVA, TAGS.SPRINGBOOT]
   },
   {
-    title: 'React To-Do App',
-    description: 'The idea of this project was making a simple web application using React JS to get familiar with this framework. \nThis app consists in a list of To-do tasks, with a title and status. All tasks created will be displayed at the main page, from where you can create new tasks, update and delete existing ones.',
-    link: 'https://github.com/daniveler/react-todo-app',
-    image: 'https://github.com/daniveler/react-todo-app/raw/main/images/todo-app.png',
-    tags: [TAGS.REACTJS, TAGS.JAVASCRIPT]
+    title: 'MovieFav. Movie List App',
+    description: 'Mobile Application developed for a technical test, using the Retrofit and Room libraries to read data from an API and to manage a local DB that allows data persistence.',
+    link: 'https://github.com/daniveler/MovieFav',
+    image: 'https://github.com/daniveler/MovieFav/raw/main/images/moviefav.png',
+    tags: [TAGS.ANDROID, TAGS.KOTLIN]
+  },
+  {
+    title: 'Survy. Educational app of online surveys and questions',
+    description: 'Final Degree Project for Computer Engineering Degree. Mobile application for managing online surveys and questions in the educational field.',
+    link: 'https://github.com/daniveler/Survy',
+    image: 'https://github.com/daniveler/Survy/raw/main/images/survy.png',
+    tags: [TAGS.ANDROID, TAGS.KOTLIN]
   },
 ]
 ---
 
-<h2 class="text-2xl md:text-3xl font-semibold mt-6 mb-8 flex gap-x-3 items-center">
+<h2 class="text-2xl md:text-3xl font-semibold flex gap-x-3 items-center">
   <CodeIcon class="size-8"/>
   Projects
 </h2>
@@ -51,28 +82,29 @@ const PROJECTS = [
   PROJECTS.map(({title, description, tags, image}) => (
     <article>
       <h1 
-        class="text-2xl font-semibold text-purple-400 mt-8 mb-4"
+        class="text-2xl md:text-2xl font-semibold text-purple-400 mt-8 mb-4"
       >
         {title}
       </h1>
-      <ul class="flex gap-x-4 flex-row mb-4">
+      
+      <p class="text-lg mb-4 text-pretty">{description}</p>
+
+      <ul class="flex gap-x-4 flex-row">
         {
           tags.map((tag) => (
             <li>
               <span class={`flex items-center gap-x-2 rounded-full text-sm py-2 px-3 ${tag.class}`}>
                 <tag.icon class="size-4" />
-                <p class="font-medium text-base text-center">{tag.name}</p>
+                <p class="font-medium md:text-base text-center">{tag.name}</p>
               </span>
             </li>
           ))
         }
       </ul>
       
-      <p class="text-lg mb-4 text-pretty">{description}</p>
-      
       <div class="flex items-center justify-center">
         <img 
-        class="w-4/5 md:w-2/3 rounded shadow-2xl shadow-white/30"
+        class="mt-8 mx-12 rounded shadow-lg shadow-white/20"
         src={image} 
         alt={`Project ${title} screenshot`}
       />
