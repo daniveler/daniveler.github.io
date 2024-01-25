@@ -6,6 +6,7 @@ import JavaIcon from '../components/icons/Java.astro'
 import SpringbootIcon from '../components/icons/Springboot.astro'
 import AndroidIcon from '../components/icons/Android.astro'
 import KotlinIcon from '../components/icons/Kotlin.astro'
+import VueIcon from '../components/icons/Vue.astro'
 
 const TAGS = {
   JAVASCRIPT: {
@@ -17,6 +18,11 @@ const TAGS = {
     name: 'ReactJS',
     class: 'bg-blue-500/70',
     icon: (ReactIcon)
+  },
+  VUE: {
+    name: 'VueJS',
+    class: 'bg-cyan-500/70',
+    icon: (VueIcon)
   },
   JAVA: {
     name: 'Java',
@@ -69,6 +75,13 @@ const PROJECTS = [
     link: 'https://github.com/daniveler/Survy',
     image: 'https://github.com/daniveler/Survy/raw/main/images/survy.png',
     tags: [TAGS.ANDROID, TAGS.KOTLIN]
+  },
+  {
+    title: 'Weather Vue',
+    description: 'Simple VueJS web application to check the actual weather in any city powered by openweathermap API.',
+    link: 'https://github.com/daniveler/weatherVue',
+    image: 'https://github.com/daniveler/weatherVue/raw/master/images/weather-vue.png',
+    tags: [TAGS.VUE, TAGS.JAVASCRIPT]
   },
 ]
 ---
