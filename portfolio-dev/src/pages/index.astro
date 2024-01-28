@@ -1,19 +1,28 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import SectionContainer from '../components/SectionContainer.astro'
-import Home from '../components/Home.astro'
-import Contact from '../components/Contact.astro';
+import AboutMe from '../components/AboutMe.astro'
 import Experience from '../components/Experience.astro';
+import Home from '../components/Home.astro'
+import Layout from '../layouts/Layout.astro';
 import Projects from '../components/Projects.astro';
+import SectionContainer from '../components/SectionContainer.astro'
+import SocialMedia from '../components/SocialMedia.astro';
 ---
 
 <Layout 
 	title="Daniel Velerdas Sedano - API Engineer and Full-Stack Developer"
-	description='I am Daniel Velerdas Sedano, graduated in Computer Engineer with experience with API Engineering and Full-Stack Development'
+	description='I am Daniel Velerdas Sedano, graduated in Computer Engineer with experience with API Engineering and Full-Stack and Mobile Development'
 	
 >
 	<main class="px-8">
 		<Home />
+
+		<SectionContainer id="about">
+			<AboutMe />
+		</SectionContainer>
+
+		<SectionContainer id="socialmedia">
+			<SocialMedia />
+		</SectionContainer>
 
 		<SectionContainer id="experience">
 			<Experience />
@@ -21,10 +30,6 @@ import Projects from '../components/Projects.astro';
 
 		<SectionContainer id="projects">
 			<Projects />
-		</SectionContainer>
-
-		<SectionContainer id="contact">
-			<Contact />
 		</SectionContainer>
 		
 	</main>
