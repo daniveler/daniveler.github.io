@@ -5,6 +5,5 @@ import tailwind from "@astrojs/tailwind";
 // https://astro.build/config
 export default defineConfig({
   integrations: [tailwind()],
-  site: 'https://daniveler.github.io',
-  base: '/portfolio-dev'
+  site: 'https://daniveler.github.io'
 });
