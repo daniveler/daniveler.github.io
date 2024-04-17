@@ -8,6 +8,11 @@ import AndroidIcon from '../components/icons/Android.astro'
 import KotlinIcon from '../components/icons/Kotlin.astro'
 import VueIcon from '../components/icons/Vue.astro'
 
+import { getLangFromUrl, useTranslations } from '../i18n/utils'
+
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
+
 const TAGS = {
   JAVASCRIPT: {
     name: 'Javascript',
@@ -49,36 +54,35 @@ const TAGS = {
 
 const PROJECTS = [
   {
-    title: 'To-Do Web Application',
-    description: 'The idea of this project was making a simple web application using React JS to get familiar with this framework. \nThis app consists in a list of To-do tasks, with a title and status. All tasks created will be displayed at the main page, from where you can create new tasks, update and delete existing ones.',
+    title: `${t('projects.to-do.title')}`,
+    description: `${t('projects.to-do.text')}`,
     link: 'https://github.com/daniveler/react-todo-app',
     image: 'https://github.com/daniveler/react-todo-app/raw/main/images/todo-app.png',
     tags: [TAGS.REACTJS, TAGS.JAVASCRIPT]
   },
   {
-    title: 'Axpe Employees API',
-    description: 'Final exercise from a training period on apification. Rest API service for controlling employees of a company, including its OpenAPI 3.0 specification and implementation in Spring Boot.',
+    title: `${t('projects.axpe-employees-api.title')}`,
+    description: `${t('projects.axpe-employees-api.text')}`,
     link: 'https://github.com/daniveler/api-empleados-axpe',
     image: 'https://github.com/daniveler/api-empleados-axpe/raw/main/images/axpe-employees-api.png',
     tags: [TAGS.JAVA, TAGS.SPRINGBOOT]
   },
   {
-    title: 'MovieFav. Movie List App',
-    description: 'Mobile Application developed for a technical test, using the Retrofit and Room libraries to read data from an API and to manage a local DB that allows data persistence.',
-    link: 'https://github.com/daniveler/MovieFav',
+    title: `${t('projects.moviefav.title')}`,
+    description: `${t('projects.moviefav.text')}`,
     image: 'https://github.com/daniveler/MovieFav/raw/main/images/moviefav.png',
     tags: [TAGS.ANDROID, TAGS.KOTLIN]
   },
   {
-    title: 'Survy. Educational app of online surveys and questions',
-    description: 'Final Degree Project for Computer Engineering Degree. Mobile application for managing online surveys and questions in the educational field.',
+    title: `${t('projects.survy.title')}`,
+    description: `${t('projects.survy.text')}`,
     link: 'https://github.com/daniveler/Survy',
     image: 'https://github.com/daniveler/Survy/raw/main/images/survy.png',
     tags: [TAGS.ANDROID, TAGS.KOTLIN]
   },
   {
-    title: 'Weather Vue',
-    description: 'Simple VueJS web application to check the actual weather in any city powered by openweathermap API.',
+    title: `${t('projects.weather-vue.title')}`,
+    description: `${t('projects.weather-vue.text')}`,
     link: 'https://github.com/daniveler/weatherVue',
     image: 'https://github.com/daniveler/weatherVue/raw/master/images/weather-vue.png',
     tags: [TAGS.VUE, TAGS.JAVASCRIPT]
