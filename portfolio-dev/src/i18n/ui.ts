@@ -25,6 +25,7 @@ export const ui = {
     
     Nowadays, I am actively seeking challenges to enhance my skills, fueled by a strong motivation to continue learning and diving deeper into the fascinating realm of development.`,
 
+    'experience.title': 'Professional Experience',
     'experience.uxcale.title': 'API Engineer in uXcale',
     'experience.uxcale.date': 'September 2022 - Present',
     'experience.uxcale.text': `- Development of an introductory training program for APIs.
