@@ -17,13 +17,7 @@ export const ui = {
     'home.name': 'I\'m Daniel Velerdas',
     'home.text': 'API Engineer, Full-Stack and Mobile Developer',
 
-    'about.text': `Since I finished my degree in Computer Engineering till now, I have not stopped studying and upgrading my developing skills.
-
-    In my first job, I discovered the world of APIs and how they help building efficient and scalable solutions, enabling communications between the different components in the backend.
-    
-    Thanks to this position, I had the opportunity to collaborate with international teams, gaining valuable insights into different working styles and modeling a global perspective on technologies.
-    
-    Nowadays, I am actively seeking challenges to enhance my skills, fueled by a strong motivation to continue learning and diving deeper into the fascinating realm of development.`,
+    'about.title': 'About me',
 
     'experience.title': 'Professional Experience',
     'experience.uxcale.title': 'API Engineer in uXcale',
@@ -73,12 +67,7 @@ export const ui = {
     'nav.projects': 'Proyectos',
     'nav.download-cv': 'Descargar CV',
 
-    'about.text': `Desde que terminé mi carrera en Ingeniería Informática, he continuado estudiando y mejorando mis habilidades de desarrollo. 
-
-    Mi primer trabajo me permitió colaborar con equipos internacionales, adquiriendo perspectivas valiosas sobre diferentes estilos de trabajo y tecnologías. 
-    
-    Actualmente, busco activamente desafíos para seguir mejorando, impulsado por una fuerte motivación para aprender y profundizar en el desarrollo de software.`,
-
+    'about.title': 'Sobre mí',
 
   },
 } as const;
