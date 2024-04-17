@@ -26,7 +26,7 @@ export const ui = {
     - Design and specification of internal APIs for employee and activity management.
     - Documentation on numerous API concepts and various technologies, such as OpenAPI, Apigee, Mulesoft, gRPC, AsyncAPI, and GraphQL, among others.
     - Implementation of APIs using different environments such as SpringBoot, NodeJS or GraphQL.
-    - Conducting tests and testing with Junit 5 and Mockito.
+    - Conducting tests and testing with Jest, Supertest, Junit 5 and Mockito.
     - Utilization of API clients such as Postman, Advanced Rest Client, or Insomnia.`,
 
     'experience.telefonica.title': 'API OB Integration Engineer in Telefónica',
