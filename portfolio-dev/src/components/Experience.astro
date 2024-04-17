@@ -2,21 +2,26 @@
 import ExperienceItem from "./ExperienceItem.astro"
 import BriefcaseIcon from "./icons/Briefcase.astro"
 
+import { getLangFromUrl, useTranslations } from '../i18n/utils'
+
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
+
 const EXPERIENCE = [
   {
-    date: 'September 2022 - Present',
-    title: 'API Engineer in uXcale',
-    description: '- Development of an introductory training program for APIs.\n- Design and specification of internal APIs for employee and activity management.\n- Documentation on numerous API concepts and various technologies, such as OpenAPI, Apigee, Mulesoft, gRPC, AsyncAPI, and GraphQL, among others.\n- Implementation of APIs using different environments such as SpringBoot, NodeJS or GraphQL.\n- Conducting tests and testing with Junit 5 and Mockito.\n- Utilization of API clients such as Postman, Advanced Rest Client, or Insomnia.',
+    date: `${t('experience.uxcale.date')}`,
+    title: `${t('experience.uxcale.title')}`,
+    description: `${t('experience.uxcale.text')}`,
   }, 
   {
-    date: 'January 2022 - Present',
-    title: 'API OB Integration Engineer in Telefónica',
-    description: '- Project integration between Telefónica Kernel Global and Vivo Brazil team.\n- Involvement in the analysis and design processes of 4P APIs.\n- Significant contributions to different phases of the API lifecycle.\n- Formal documentation of all processes undertaken, as well as test case generation.',
+    date: `${t('experience.telefonica.date')}`,
+    title: `${t('experience.telefonica.title')}`,
+    description: `${t('experience.telefonica.text')}`,
   },
   {
-    date: 'February 2022 - May 2022',
-    title: 'Mobile Android and iOS Developer in Pixel Innova',
-    description: '- App Development on Android and iOS.\n- Focus on implementing key functions, such as reading and interpreting QR codes.\n- Efficient data management between applications.\n- Integration with a WebService.',
+    date: `${t('experience.pixel.date')}`,
+    title: `${t('experience.pixel.title')}`,
+    description: `${t('experience.pixel.text')}`,
   },
 ]
 ---

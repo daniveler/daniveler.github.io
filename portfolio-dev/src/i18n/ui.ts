@@ -39,7 +39,7 @@ export const ui = {
     'experience.telefonica.text': `- Project integration between Telefónica Kernel Global and Vivo Brazil team.
     - Involvement in the analysis and design processes of 4P APIs.
     - Significant contributions to different phases of the API lifecycle.
-    - Development and deploy of different integration tools using Node JS, ReactJS and Express.
+    - Development and deployment of different integration tools using Node JS, ReactJS and Express.
     - Formal documentation of all processes undertaken, as well as test case generation.`,
 
     'experience.pixel.title': 'Mobile Developer in Pixel Innova',
