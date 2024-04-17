@@ -1,5 +1,9 @@
 ---
 import DownloadIcon from '../components/icons/Download.astro'
+import { getLangFromUrl, useTranslations } from '../i18n/utils'
+
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
 ---
 
 <header class="flex flex-row pt-4 justify-center
@@ -16,17 +20,17 @@ import DownloadIcon from '../components/icons/Download.astro'
   <nav class="flex flex-wrap justify-center items-center 
     gap-y-2 opacity-80
     md:flex md:flex-row md:text-base md:gap-y-5 md:gap-x-10">
-    <a class="w-1/2 text-center md:w-max" href="#about">About me</a>
-    <a class="w-1/2 text-center md:w-max" href="#socialmedia">Social Media</a>
-    <a class="w-1/2 text-center md:w-max" href="#experience">Experience</a>
-    <a class="w-1/2 text-center md:w-max" href="#projects">Projects</a>
+    <a class="w-1/2 text-center md:w-max" href="#about">{t('nav.about')}</a>
+    <a class="w-1/2 text-center md:w-max" href="#socialmedia">{t('nav.social-media')}</a>
+    <a class="w-1/2 text-center md:w-max" href="#experience">{t('nav.experience')}</a>
+    <a class="w-1/2 text-center md:w-max" href="#projects">{t('nav.projects')}</a>
     
       <a href="/cv-en.pdf" download="CV Daniel Velerdas Sedano (EN).pdf">
         <button 
           class=" bg-purple-500 hover:bg-purple-400 text-white-800 font-bold py-2 px-4 rounded inline-flex items-center"
         >
           <DownloadIcon class="mr-2"/>
-          Download CV
+          {t('nav.download-cv')}
         </button>
       </a>
       

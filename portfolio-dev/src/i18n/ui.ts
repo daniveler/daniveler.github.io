@@ -7,6 +7,7 @@ export const defaultLang = 'en';
 
 export const ui = {
   en: {
+    'nav.home': 'Home',
     'nav.about': 'About',
     'nav.social-media': 'Social Media',
     'nav.experience': 'Experience',
@@ -64,6 +65,7 @@ export const ui = {
     'projects.weather-vue.text': 'Simple VueJS web application to check the actual weather in any city powered by openweathermap API.',
   },
   es: {
+    'nav.home': 'Inicio',
     'nav.about': 'Sobre mí',
     'nav.social-media': 'Contacto',
     'nav.experience': 'Experiencia',
