@@ -1,11 +1,18 @@
+---
+import { getLangFromUrl, useTranslations } from '../i18n/utils'
+
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
+---
+
 <section class="py-24 md:py-44">
   <h1 class="flex justify-center font-bold
     text-3xl md:text-6xl
     flex-row gap-x-4 py-4 md:py-8 lg:py-10">
-    I'm Daniel Velerdas
+    {t('home.name')}
   </h1>
   <h2 class="flex text-center justify-center text-lg font-mono font-bold text-purple-400
     md:text-4xl text-balance md:text-pretty">
-        API Engineer, Full-Stack and Mobile Developer
+    {t('home.text')}
   </h2>
 </section>
