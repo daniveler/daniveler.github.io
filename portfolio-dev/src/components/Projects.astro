@@ -9,6 +9,7 @@ import KotlinIcon from '../components/icons/Kotlin.astro'
 import VueIcon from '../components/icons/Vue.astro'
 
 import { getLangFromUrl, useTranslations } from '../i18n/utils'
+import SwaggerIcon from './icons/Swagger.astro'
 
 const lang = getLangFromUrl(Astro.url)
 const t = useTranslations(lang)
@@ -39,6 +40,11 @@ const TAGS = {
     class: 'bg-green-500/70',
     icon: (SpringbootIcon)
   },
+  SWAGGER: {
+    name: 'Swagger',
+    class: 'bg-lime-500/70',
+    icon: (SwaggerIcon)
+  },
   ANDROID: {
     name: 'Android',
     class: 'bg-green-700/70',
@@ -65,7 +71,7 @@ const PROJECTS = [
     description: `${t('projects.axpe-employees-api.text')}`,
     link: 'https://github.com/daniveler/api-empleados-axpe',
     image: 'https://github.com/daniveler/api-empleados-axpe/raw/main/images/axpe-employees-api.png',
-    tags: [TAGS.JAVA, TAGS.SPRINGBOOT]
+    tags: [TAGS.JAVA, TAGS.SPRINGBOOT, TAGS.SWAGGER]
   },
   {
     title: `${t('projects.moviefav.title')}`,
