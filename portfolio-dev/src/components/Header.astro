@@ -1,9 +1,19 @@
 ---
 import DownloadIcon from '../components/icons/Download.astro'
 import { getLangFromUrl, useTranslations } from '../i18n/utils'
+import SpainIcon from '../components/icons/Spain.astro'
 
 const lang = getLangFromUrl(Astro.url)
 const t = useTranslations(lang)
+
+let href = ''
+
+if(lang === 'en') {
+  href = '/es/'
+}
+else {
+  href = '/en/'
+}
 ---
 
 <header class="flex flex-row pt-4 justify-center
@@ -24,8 +34,14 @@ const t = useTranslations(lang)
     <a class="w-1/2 text-center md:w-max" href="#socialmedia">{t('nav.social-media')}</a>
     <a class="w-1/2 text-center md:w-max" href="#experience">{t('nav.experience')}</a>
     <a class="w-1/2 text-center md:w-max" href="#projects">{t('nav.projects')}</a>
+    <div class="flex flex-row">
+      <a class="w-1/2 text-center md:w-max" href={href}>{t('nav.language')}
+      </a>
+      <SpainIcon />
+    </div>
     
-      <a href="/cv-en.pdf" download="CV Daniel Velerdas Sedano (EN).pdf">
+    
+      <a href="/cv-en.pdf" download=`CV Daniel Velerdas Sedano (EN).pdf`>
         <button 
           class=" bg-purple-500 hover:bg-purple-400 text-white-800 font-bold py-2 px-4 rounded inline-flex items-center"
         >

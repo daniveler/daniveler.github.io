@@ -12,6 +12,7 @@ export const ui = {
     'nav.social-media': 'Social Media',
     'nav.experience': 'Experience',
     'nav.projects': 'Projects',
+    'nav.language': 'Change language',
     'nav.download-cv': 'Download CV',
 
     'home.name': 'I\'m Daniel Velerdas',
@@ -65,6 +66,7 @@ export const ui = {
     'nav.social-media': 'Contacto',
     'nav.experience': 'Experiencia',
     'nav.projects': 'Proyectos',
+    'nav.language': 'Cambiar Idioma',
     'nav.download-cv': 'Descargar CV',
 
     'about.title': 'Sobre mí',
