@@ -3,6 +3,15 @@ import { getLangFromUrl, useTranslations } from '../i18n/utils'
 
 const lang = getLangFromUrl(Astro.url)
 const t = useTranslations(lang)
+
+let href = ''
+
+if(lang === 'en') {
+  href = '/es/'
+}
+else {
+  href = '/en/'
+}
 ---
 
 <footer class="shadow m-4 bg-black/20 backdrop-blur-lg">
@@ -16,7 +25,8 @@ const t = useTranslations(lang)
       <li><a href="#socialmedia" class="hover:underline me-4 md:me-6">{t('nav.social-media')}</a></li>
       <li><a href="#experience" class="hover:underline me-4 md:me-6">{t('nav.experience')}</a></li>
       <li><a href="#projects" class="hover:underline me-4 md:me-6">{t('nav.projects')}</a></li>
-      <li><a href="/cv-en.pdf" download="CV Daniel Velerdas Sedano (EN).pdf" 
+      <li><a href=`${href}` class="hover:underline me-4 md:me-6">{t('nav.language')}</a></li>
+      <li><a href=`/cv-${lang}.pdf" download="CV Daniel Velerdas Sedano (${lang.toUpperCase()}).pdf`
         class="hover:underline me-4 md:me-6">
         {t('nav.download-cv')}</a>
       </li>
