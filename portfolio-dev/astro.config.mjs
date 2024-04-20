@@ -13,5 +13,4 @@ export default defineConfig({
       prefixDefaultLocale: true
     }
   }
-  //base: '/professional-portfolio'
 });
