@@ -10,6 +10,9 @@ import VueIcon from '../components/icons/Vue.astro'
 
 import { getLangFromUrl, useTranslations } from '../i18n/utils'
 import SwaggerIcon from './icons/Swagger.astro'
+import GraphQLIcon from './icons/GraphQL.astro'
+import TypescriptIcon from './icons/Typescript.astro'
+import NodeJSIcon from './icons/NodeJS.astro'
 
 const lang = getLangFromUrl(Astro.url)
 const t = useTranslations(lang)
@@ -55,10 +58,31 @@ const TAGS = {
     class: 'bg-purple-600/70',
     icon: (KotlinIcon)
   },
+  TYPESCRIPT: {
+    name: 'Typescript',
+    class: 'bg-blue-700/70',
+    icon: (TypescriptIcon)
+  },
+  NODEJS: {
+    name: 'NodeJS',
+    class: 'bg-green-900/70',
+    icon: (NodeJSIcon)
+  },
+  GRAPHQL: {
+    name: 'GraphQL',
+    class: 'bg-pink-700/70',
+    icon: (GraphQLIcon)
+  }
 }
 
 
 const PROJECTS = [
+{
+    title: `${t('projects.helsinki.title')}`,
+    description: `${t('projects.helsinki.text')}`,
+    link: 'https://github.com/daniveler/curso-react-universidad-de-helsinki',
+    tags: [TAGS.REACTJS, TAGS.NODEJS, TAGS.JAVASCRIPT, TAGS.TYPESCRIPT, TAGS.GRAPHQL]
+  },
   {
     title: `${t('projects.to-do.title')}`,
     description: `${t('projects.to-do.text')}`,
@@ -122,11 +146,11 @@ const PROJECTS = [
 
       <a href={link} target="_blank"></a>
 
-      <ul class="flex gap-x-4 flex-row">
+      <ul class="flex flex-wrap gap-x-4 flex-row">
         {
           tags.map((tag) => (
             <li>
-              <span class={`flex items-center gap-x-2 rounded-full text-sm py-2 px-3 ${tag.class}`}>
+              <span class={`flex items-center gap-x-2 rounded-full text-sm mt-4 py-2 px-3 ${tag.class}`}>
                 <tag.icon class="size-4" />
                 <p class="font-medium md:text-base text-center">{tag.name}</p>
               </span>

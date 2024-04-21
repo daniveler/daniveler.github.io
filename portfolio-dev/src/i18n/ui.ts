@@ -48,6 +48,9 @@ export const ui = {
     - Integration with a WebService.`,
 
     'projects.title': 'Projects',
+
+    'projects.helsinki.title': 'Full-Stack Open Course from University of Helsinki',
+    'projects.helsinki.text': 'This course serves as an introduction to modern web application development with JavaScript and Typescript. The main focus is on building single page applications with ReactJS that use REST APIs built with Node.js. The course also contains a section on GraphQL, a modern alternative to REST APIs. The course covers testing, configuration and environment management, the use of databases for storing the application\’s data amongst other things.',
     
     'projects.to-do.title': 'To-Do Web Application',
     'projects.to-do.text': 'The idea of this project was making a simple web application using React JS to get familiar with this framework. This app consists in a list of To-do tasks, with a title and status. All tasks created will be displayed at the main page, from where you can create new tasks, update and delete existing ones.',
@@ -107,6 +110,9 @@ export const ui = {
     - Integración con un WebService.`,
 
     'projects.title': 'Proyectos',
+
+    'projects.helsinki.title': 'Curso Full-Stack Open de la Universidad de Helsinki',
+    'projects.helsinki.text': 'Este curso sirve como una introducción al desarrollo de aplicaciones web modernas con JavaScript y Typescript. El enfoque principal está en construir aplicaciones single-page con ReactJS que utilizan APIs REST construidas con Node.js. El curso también incluye una sección sobre GraphQL, una alternativa moderna a las APIs REST. El curso cubre pruebas, configuración y gestión del entorno, el uso de bases de datos para almacenar los datos de la aplicación, entre otras cosas.',
 
     'projects.to-do.title': 'Aplicación Web To-Do',
     'projects.to-do.text': 'La idea de este proyecto era crear una aplicación web simple utilizando React JS para familiarizarse con este framework. Esta aplicación consiste en una lista de tareas pendientes, con un título y estado. Todas las tareas creadas se mostrarán en la página principal, desde donde puedes crear nuevas tareas, actualizar y eliminar las existentes.',
