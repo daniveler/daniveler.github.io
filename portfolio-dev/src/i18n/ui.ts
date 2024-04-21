@@ -20,6 +20,8 @@ export const ui = {
 
     'about.title': 'About me',
 
+    'social-media.title': 'Social Media',
+
     'experience.title': 'Professional Experience',
     'experience.uxcale.title': 'API Engineer in uXcale',
     'experience.uxcale.date': 'September 2022 - Present',
@@ -75,6 +77,8 @@ export const ui = {
     'home.text': 'API Engineer, Desarrollador Full-Stack y Móvil',
 
     'about.title': 'Sobre mí',
+
+    'social-media.title': 'Contacto',
 
     'experience.title': 'Experiencia Profesional',
 
