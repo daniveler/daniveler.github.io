@@ -1,24 +1,29 @@
 ---
-import ContactIcon from './icons/Contact.astro'
-import AboutMeEN from './AboutMeEN.astro'
-import AboutMeES from './AboutMeES.astro'
-import { getLangFromUrl, useTranslations } from '../i18n/utils'
+import ContactIcon from "./icons/Contact.astro";
+import AboutMeEN from "./AboutMeEN.astro";
+import AboutMeES from "./AboutMeES.astro";
+import { getLangFromUrl, useTranslations } from "../i18n/utils";
 
-const lang = getLangFromUrl(Astro.url)
-const t = useTranslations(lang)
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
-<h2 class="text-2xl md:text-3xl font-semibold mt-8 mb-6 flex gap-x-3 items-center">
+<h2
+  class="text-2xl md:text-3xl font-semibold mt-8 mb-6 flex gap-x-3 items-center"
+>
   <ContactIcon class="size-8" />
-  {t('about.title')}
+  {t("about.title")}
 </h2>
 
 <section class="flex flex-col md:flex-row gap-x-4">
-  <div class="[&>p]:mb-4 [&>p>strong]:text-purple-400">
-    {
-      lang === 'en' 
-      ? <AboutMeEN />
-      : <AboutMeES />
-    }
+  <div class="flex flex-col md:flex-row">
+    <div class="flex justify-center items-center md:ml-8 mb-8 md:order-2">
+      <img
+        class="flex rounded-full size-56"
+        src="../../public/about-me.jpg"
+      />
+    </div>
+
+    {lang === "en" ? <AboutMeEN /> : <AboutMeES />}
   </div>
 </section>
