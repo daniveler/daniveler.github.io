@@ -1,165 +1,181 @@
 ---
-import CodeIcon from '../components/icons/Code.astro'
-import JavascriptIcon from '../components/icons/Javascript.astro'
-import ReactIcon from '../components/icons/Reactjs.astro'
-import JavaIcon from '../components/icons/Java.astro'
-import SpringbootIcon from '../components/icons/Springboot.astro'
-import AndroidIcon from '../components/icons/Android.astro'
-import KotlinIcon from '../components/icons/Kotlin.astro'
-import VueIcon from '../components/icons/Vue.astro'
+import CodeIcon from "../components/icons/Code.astro";
+import JavascriptIcon from "../components/icons/Javascript.astro";
+import ReactIcon from "../components/icons/Reactjs.astro";
+import JavaIcon from "../components/icons/Java.astro";
+import SpringbootIcon from "../components/icons/Springboot.astro";
+import AndroidIcon from "../components/icons/Android.astro";
+import KotlinIcon from "../components/icons/Kotlin.astro";
+import VueIcon from "../components/icons/Vue.astro";
 
-import { getLangFromUrl, useTranslations } from '../i18n/utils'
-import SwaggerIcon from './icons/Swagger.astro'
-import GraphQLIcon from './icons/GraphQL.astro'
-import TypescriptIcon from './icons/Typescript.astro'
-import NodeJSIcon from './icons/NodeJS.astro'
+import { getLangFromUrl, useTranslations } from "../i18n/utils";
+import SwaggerIcon from "./icons/Swagger.astro";
+import GraphQLIcon from "./icons/GraphQL.astro";
+import TypescriptIcon from "./icons/Typescript.astro";
+import NodeJSIcon from "./icons/NodeJS.astro";
 
-const lang = getLangFromUrl(Astro.url)
-const t = useTranslations(lang)
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 
 const TAGS = {
   JAVASCRIPT: {
-    name: 'Javascript',
-    class: 'bg-yellow-400/70',
-    icon: (JavascriptIcon)
+    name: "Javascript",
+    class: "bg-yellow-400/70",
+    icon: JavascriptIcon,
   },
   REACTJS: {
-    name: 'ReactJS',
-    class: 'bg-blue-500/70',
-    icon: (ReactIcon)
+    name: "ReactJS",
+    class: "bg-blue-500/70",
+    icon: ReactIcon,
   },
   VUE: {
-    name: 'VueJS',
-    class: 'bg-cyan-500/70',
-    icon: (VueIcon)
+    name: "VueJS",
+    class: "bg-cyan-500/70",
+    icon: VueIcon,
   },
   JAVA: {
-    name: 'Java',
-    class: 'bg-orange-500/70',
-    icon: (JavaIcon)
+    name: "Java",
+    class: "bg-orange-500/70",
+    icon: JavaIcon,
   },
   SPRINGBOOT: {
-    name: 'Springboot',
-    class: 'bg-green-500/70',
-    icon: (SpringbootIcon)
+    name: "Springboot",
+    class: "bg-green-500/70",
+    icon: SpringbootIcon,
   },
   SWAGGER: {
-    name: 'Swagger',
-    class: 'bg-lime-500/70',
-    icon: (SwaggerIcon)
+    name: "Swagger",
+    class: "bg-lime-500/70",
+    icon: SwaggerIcon,
   },
   ANDROID: {
-    name: 'Android',
-    class: 'bg-green-700/70',
-    icon: (AndroidIcon)
+    name: "Android",
+    class: "bg-green-700/70",
+    icon: AndroidIcon,
   },
   KOTLIN: {
-    name: 'Kotlin',
-    class: 'bg-purple-600/70',
-    icon: (KotlinIcon)
+    name: "Kotlin",
+    class: "bg-purple-600/70",
+    icon: KotlinIcon,
   },
   TYPESCRIPT: {
-    name: 'Typescript',
-    class: 'bg-blue-700/70',
-    icon: (TypescriptIcon)
+    name: "Typescript",
+    class: "bg-blue-700/70",
+    icon: TypescriptIcon,
   },
   NODEJS: {
-    name: 'NodeJS',
-    class: 'bg-green-900/70',
-    icon: (NodeJSIcon)
+    name: "NodeJS",
+    class: "bg-green-900/70",
+    icon: NodeJSIcon,
   },
   GRAPHQL: {
-    name: 'GraphQL',
-    class: 'bg-pink-700/70',
-    icon: (GraphQLIcon)
-  }
-}
-
+    name: "GraphQL",
+    class: "bg-pink-700/70",
+    icon: GraphQLIcon,
+  },
+};
 
 const PROJECTS = [
-{
-    title: `${t('projects.helsinki.title')}`,
-    description: `${t('projects.helsinki.text')}`,
-    link: 'https://github.com/daniveler/curso-react-universidad-de-helsinki',
-    tags: [TAGS.REACTJS, TAGS.NODEJS, TAGS.JAVASCRIPT, TAGS.TYPESCRIPT, TAGS.GRAPHQL]
+  {
+    title: `${t("projects.opofinder.title")}`,
+    description: `${t("projects.opofinder.text")}`,
+    link: "https://github.com/daniveler/opo-finder",
+    tags: [
+      TAGS.REACTJS,
+      TAGS.NODEJS,
+      TAGS.JAVASCRIPT
+    ],
   },
   {
-    title: `${t('projects.to-do.title')}`,
-    description: `${t('projects.to-do.text')}`,
-    link: 'https://github.com/daniveler/react-todo-app',
-    image: 'https://github.com/daniveler/react-todo-app/raw/main/images/todo-app.png',
-    tags: [TAGS.REACTJS, TAGS.JAVASCRIPT]
+    title: `${t("projects.helsinki.title")}`,
+    description: `${t("projects.helsinki.text")}`,
+    link: "https://github.com/daniveler/curso-react-universidad-de-helsinki",
+    tags: [
+      TAGS.REACTJS,
+      TAGS.NODEJS,
+      TAGS.JAVASCRIPT,
+      TAGS.TYPESCRIPT,
+      TAGS.GRAPHQL,
+    ],
   },
   {
-    title: `${t('projects.axpe-employees-api.title')}`,
-    description: `${t('projects.axpe-employees-api.text')}`,
-    link: 'https://github.com/daniveler/api-empleados-axpe',
-    image: 'https://github.com/daniveler/api-empleados-axpe/raw/main/images/axpe-employees-api.png',
-    tags: [TAGS.JAVA, TAGS.SPRINGBOOT, TAGS.SWAGGER]
+    title: `${t("projects.to-do.title")}`,
+    description: `${t("projects.to-do.text")}`,
+    link: "https://github.com/daniveler/react-todo-app",
+    image:
+      "https://github.com/daniveler/react-todo-app/raw/main/images/todo-app.png",
+    tags: [TAGS.REACTJS, TAGS.JAVASCRIPT],
   },
   {
-    title: `${t('projects.moviefav.title')}`,
-    description: `${t('projects.moviefav.text')}`,
-    image: 'https://github.com/daniveler/MovieFav/raw/main/images/moviefav.png',
-    link: 'https://github.com/daniveler/MovieFav',
-    tags: [TAGS.ANDROID, TAGS.KOTLIN]
+    title: `${t("projects.axpe-employees-api.title")}`,
+    description: `${t("projects.axpe-employees-api.text")}`,
+    link: "https://github.com/daniveler/api-empleados-axpe",
+    image:
+      "https://github.com/daniveler/api-empleados-axpe/raw/main/images/axpe-employees-api.png",
+    tags: [TAGS.JAVA, TAGS.SPRINGBOOT, TAGS.SWAGGER],
   },
   {
-    title: `${t('projects.survy.title')}`,
-    description: `${t('projects.survy.text')}`,
-    link: 'https://github.com/daniveler/Survy',
-    image: 'https://github.com/daniveler/Survy/raw/main/images/survy.png',
-    tags: [TAGS.ANDROID, TAGS.KOTLIN]
+    title: `${t("projects.moviefav.title")}`,
+    description: `${t("projects.moviefav.text")}`,
+    image: "https://github.com/daniveler/MovieFav/raw/main/images/moviefav.png",
+    link: "https://github.com/daniveler/MovieFav",
+    tags: [TAGS.ANDROID, TAGS.KOTLIN],
   },
   {
-    title: `${t('projects.weather-vue.title')}`,
-    description: `${t('projects.weather-vue.text')}`,
-    link: 'https://github.com/daniveler/weatherVue',
-    image: 'https://github.com/daniveler/weatherVue/raw/master/images/weather-vue.png',
-    tags: [TAGS.VUE, TAGS.JAVASCRIPT]
+    title: `${t("projects.survy.title")}`,
+    description: `${t("projects.survy.text")}`,
+    link: "https://github.com/daniveler/Survy",
+    image: "https://github.com/daniveler/Survy/raw/main/images/survy.png",
+    tags: [TAGS.ANDROID, TAGS.KOTLIN],
   },
-]
+  {
+    title: `${t("projects.weather-vue.title")}`,
+    description: `${t("projects.weather-vue.text")}`,
+    link: "https://github.com/daniveler/weatherVue",
+    image:
+      "https://github.com/daniveler/weatherVue/raw/master/images/weather-vue.png",
+    tags: [TAGS.VUE, TAGS.JAVASCRIPT],
+  },
+];
 ---
 
 <h2 class="text-2xl md:text-3xl font-semibold flex gap-x-3 items-center">
-  <CodeIcon class="size-8"/>
-  {t('projects.title')}
+  <CodeIcon class="size-8" />
+  {t("projects.title")}
 </h2>
 
 {
-  PROJECTS.map(({title, description, tags, link, image}) => (
+  PROJECTS.map(({ title, description, tags, link, image }) => (
     <article>
-      
       <h1 class="text-2xl md:text-2xl mt-8 mb-4 font-semibold text-purple-400">
-          {title}
+        {title}
       </h1>
-      
+
       <p class="text-lg mb-4 text-pretty">{description}</p>
 
-      { link && 
+      {link && (
         <p class="text-lg mb-4 text-purple-400 hover:underline">
           <a href={link} target="_blank">
             "{title}" GitHub Repository
           </a>
         </p>
-         }
+      )}
 
-      <a href={link} target="_blank"></a>
+      <a href={link} target="_blank" />
 
       <ul class="flex flex-wrap gap-x-4 flex-row">
-        {
-          tags.map((tag) => (
-            <li>
-              <span class={`flex items-center gap-x-2 rounded-full text-sm mt-4 py-2 px-3 ${tag.class}`}>
-                <tag.icon class="size-4" />
-                <p class="font-medium md:text-base text-center">{tag.name}</p>
-              </span>
-            </li>
-          ))
-        }
+        {tags.map((tag) => (
+          <li>
+            <span
+              class={`flex items-center gap-x-2 rounded-full text-sm mt-4 py-2 px-3 ${tag.class}`}
+            >
+              <tag.icon class="size-4" />
+              <p class="font-medium md:text-base text-center">{tag.name}</p>
+            </span>
+          </li>
+        ))}
       </ul>
-      
-      
+
       {/*
         <div class="flex items-center justify-center">
         <img 
@@ -169,7 +185,6 @@ const PROJECTS = [
       />
       </div>
        */}
-      
     </article>
   ))
 }

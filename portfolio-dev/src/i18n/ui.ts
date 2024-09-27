@@ -49,6 +49,9 @@ export const ui = {
 
     'projects.title': 'Projects',
 
+    'projects.opofinder.title': 'Opo Finder. Compilation of Official Bulletins',
+    'projects.opofinder.text': 'Full-stack application developed using React and Node JS based in the compilation of state, community and provincial official bulletins in order to make easier for users to check all of them from the same platform. It has a responsive design in order for a correct visualization from multiple devices.',
+
     'projects.helsinki.title': 'Full-Stack Open Course from University of Helsinki',
     'projects.helsinki.text': 'This course serves as an introduction to modern web application development with JavaScript and Typescript. The main focus is on building single page applications with ReactJS that use REST APIs built with Node.js. The course also contains a section on GraphQL, a modern alternative to REST APIs. The course covers testing, configuration and environment management, the use of databases for storing the application\’s data amongst other things.',
     
@@ -110,6 +113,9 @@ export const ui = {
     - Integración con un WebService.`,
 
     'projects.title': 'Proyectos',
+
+    'projects.opofinder.title': 'Opo Finder. Recopilación de Boletines Oficiales',
+    'projects.opofinder.text': 'Aplicación Full-stack desarrollada usando React y Node JS basada en la recopilación de boletines oficiales del estado, la comunidad autónoma y la provincia, con el objetivo de hacer más sencillo al usuario su consulta desde una misma plataforma. Cuenta con diseño responsive para que la visualización sea correcta desde múltiples dispositivos.',
 
     'projects.helsinki.title': 'Curso Full-Stack Open de la Universidad de Helsinki',
     'projects.helsinki.text': 'Este curso sirve como una introducción al desarrollo de aplicaciones web modernas con JavaScript y Typescript. El enfoque principal está en construir aplicaciones single-page con ReactJS que utilizan APIs REST construidas con Node.js. El curso también incluye una sección sobre GraphQL, una alternativa moderna a las APIs REST. El curso cubre pruebas, configuración y gestión del entorno, el uso de bases de datos para almacenar los datos de la aplicación, entre otras cosas.',
