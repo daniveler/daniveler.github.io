@@ -1,47 +1,56 @@
 ---
-import DownloadIcon from '../components/icons/Download.astro'
-import { getLangFromUrl, useTranslations } from '../i18n/utils'
+import DownloadIcon from "../components/icons/Download.astro";
+import { getLangFromUrl, useTranslations } from "../i18n/utils";
 
-const lang = getLangFromUrl(Astro.url)
-const t = useTranslations(lang)
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 
-let href = ''
+let href = "";
 
-if(lang === 'en') {
-  href = '/es/'
-}
-else {
-  href = '/'
+if (lang === "en") {
+  href = "/es/";
+} else {
+  href = "/";
 }
 ---
 
-<header class="flex flex-row pt-4 justify-center
-  md:pt-5
-  mx-auto">
+<header class="flex flex-row pt-4 justify-center items-center md:pt-5">
+  <div class="flex md:ml-16 justify-center items-center">
+    <img
+      class="flex rounded-full mx-4 size-16"
+      src="/about-me.jpg"
+      alt="Daniel Pic"
+    />
+  </div>
 
-  <img 
-    class="flex mx-8 rounded-full size-16
-    md:size-12 md:relative md:mr-16" 
-    src="https://media.licdn.com/dms/image/D4D03AQES7Moas9DG2A/profile-displayphoto-shrink_400_400/0/1686075196284?e=2147483647&v=beta&t=g16OQTycgzovcznyWA6IvyJrvEso3K-9JAINSxCDurk" 
-    alt="Daniel photo" 
-  />
-
-  <nav class="flex flex-wrap justify-center items-center 
+  <nav
+    class="flex flex-1 flex-wrap justify-center items-center
     gap-y-2 opacity-80
-    md:flex md:flex-row md:text-base md:gap-y-5 md:gap-x-10">
-    <a class="w-1/2 text-center md:w-max" href="#about">{t('nav.about')}</a>
-    <a class="w-1/2 text-center md:w-max" href="#socialmedia">{t('nav.social-media')}</a>
-    <a class="w-1/2 text-center md:w-max" href="#experience">{t('nav.experience')}</a>
-    <a class="w-1/2 text-center md:w-max" href="#projects">{t('nav.projects')}</a>
-    <a class="w-full text-center md:w-max" href={href}>{t('nav.language')}</a>
+    md:flex md:flex-row md:text-base md:gap-y-5 md:gap-x-10"
+  >
+    <a class="w-1/2 text-center md:w-max" href="#about">{t("nav.about")}</a>
+    <a class="w-1/2 text-center md:w-max" href="#socialmedia"
+      >{t("nav.social-media")}</a
+    >
+    <a class="w-1/2 text-center md:w-max" href="#experience"
+      >{t("nav.experience")}</a
+    >
+    <a class="w-1/2 text-center md:w-max" href="#projects"
+      >{t("nav.projects")}</a
+    >
+    <a class="w-full text-center md:w-max" href={href}>{t("nav.language")}</a>
 
-    <a href=`/cv-${lang}.pdf` download=`CV Daniel Velerdas Sedano (${lang.toUpperCase()}).pdf`>
-      <button class="bg-purple-500 hover:bg-purple-400 text-white-800 
-        font-bold py-2 px-4 rounded inline-flex items-center">
-        <DownloadIcon class="mr-2"/>
-        {t('nav.download-cv')}
+    <a
+      href=`/cv-${lang}.pdf`
+      download=`CV Daniel Velerdas Sedano (${lang.toUpperCase()}).pdf`
+    >
+      <button
+        class="bg-purple-500 hover:bg-purple-400 text-white-800
+        font-bold py-2 px-4 rounded inline-flex items-center"
+      >
+        <DownloadIcon class="mr-2" />
+        {t("nav.download-cv")}
       </button>
     </a>
-      
   </nav>
 </header>
