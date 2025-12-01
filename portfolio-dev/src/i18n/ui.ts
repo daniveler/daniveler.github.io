@@ -37,6 +37,7 @@ export const ui = {
 
     'experience.uxcale.title': 'API Engineer in uXcale',
     'experience.uxcale.date': 'September 2022 - October 2024',
+    'experience.uxcale.date': 'September 2022 - October 2024',
     'experience.uxcale.text': `- Development of an introductory training program for APIs.
     - Design and specification of internal APIs for employee and activity management.
     - Documentation on numerous API concepts and various technologies, such as OpenAPI, Apigee, Mulesoft, gRPC, AsyncAPI, and GraphQL, among others.
@@ -45,6 +46,7 @@ export const ui = {
     - Utilization of API clients such as Postman, Advanced Rest Client, or Insomnia.`,
 
     'experience.telefonica.title': 'API OB Integration Engineer in Telefónica',
+    'experience.telefonica.date': 'January 2023 - October 2024',
     'experience.telefonica.date': 'January 2023 - October 2024',
     'experience.telefonica.text': `- Project integration between Telefónica Kernel Global and Vivo Brazil team.
     - Involvement in the analysis and design processes of 4P APIs.
@@ -112,12 +114,13 @@ export const ui = {
 
     'experience.uxcale.title': 'API Engineer en uXcale',
     'experience.uxcale.date': 'Septiembre de 2022 - Octubre de 2024',
+    'experience.uxcale.date': 'Septiembre de 2022 - Octubre de 2024',
     'experience.uxcale.text': `- Desarrollo de programa formativo de introducción a las APIs.
     - Diseño y especificación de APIs de carácter interno destinadas a la gestión de empleados y actividades.
     - Documentación acerca de numerosos conceptos API, así como de numerosas tecnologías, como OpenAPI, Apigee, Mulesoft, gRPC, AsyncAPI, GraphQL entre otras.
     - Implementación de APIs utilizando diferentes entornos (SpringBoot, NodeJS...).
     - Realización de pruebas y testing con Jest, Supertest, Junit 5 y Mockito.
-    - Utilización de clientes API como Postman, Advanced Rest Client o Insomnia`,
+    - Utilización de clientes API como Postman, Advanced Rest Client o Insomnia.`,
     
     'experience.telefonica.title': 'API OB Integration Engineer en Telefónica',
     'experience.telefonica.date': 'Enero de 2023 - Octubre de 2024',
