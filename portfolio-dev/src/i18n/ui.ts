@@ -114,7 +114,6 @@ export const ui = {
 
     'experience.uxcale.title': 'API Engineer en uXcale',
     'experience.uxcale.date': 'Septiembre de 2022 - Octubre de 2024',
-    'experience.uxcale.date': 'Septiembre de 2022 - Octubre de 2024',
     'experience.uxcale.text': `- Desarrollo de programa formativo de introducción a las APIs.
     - Diseño y especificación de APIs de carácter interno destinadas a la gestión de empleados y actividades.
     - Documentación acerca de numerosos conceptos API, así como de numerosas tecnologías, como OpenAPI, Apigee, Mulesoft, gRPC, AsyncAPI, GraphQL entre otras.
