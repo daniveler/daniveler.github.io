@@ -16,7 +16,7 @@ export const ui = {
     'nav.download-cv': 'Download CV',
 
     'home.name': 'I\'m Daniel Velerdas',
-    'home.text': 'API Engineer, Full-Stack and Mobile Developer',
+    'home.text': 'Financial Crime & Fraud Prevention Consultant, API Engineer, Full-Stack',
 
     'about.title': 'About me',
 
@@ -80,7 +80,7 @@ export const ui = {
     'nav.download-cv': 'Descargar CV',
 
     'home.name': 'Soy Daniel Velerdas',
-    'home.text': 'API Engineer, Desarrollador Full-Stack y Móvil',
+    'home.text': 'Consultor en Financial Crime & Fraud Prevention, API Engineer, Full-Stack',
 
     'about.title': 'Sobre mí',
 
