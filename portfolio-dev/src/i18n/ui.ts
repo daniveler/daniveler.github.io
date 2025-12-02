@@ -37,7 +37,6 @@ export const ui = {
 
     'experience.uxcale.title': 'API Engineer in uXcale',
     'experience.uxcale.date': 'September 2022 - October 2024',
-    'experience.uxcale.date': 'September 2022 - October 2024',
     'experience.uxcale.text': `- Development of an introductory training program for APIs.
     - Design and specification of internal APIs for employee and activity management.
     - Documentation on numerous API concepts and various technologies, such as OpenAPI, Apigee, Mulesoft, gRPC, AsyncAPI, and GraphQL, among others.
@@ -46,7 +45,6 @@ export const ui = {
     - Utilization of API clients such as Postman, Advanced Rest Client, or Insomnia.`,
 
     'experience.telefonica.title': 'API OB Integration Engineer in Telefónica',
-    'experience.telefonica.date': 'January 2023 - October 2024',
     'experience.telefonica.date': 'January 2023 - October 2024',
     'experience.telefonica.text': `- Project integration between Telefónica Kernel Global and Vivo Brazil team.
     - Involvement in the analysis and design processes of 4P APIs.
